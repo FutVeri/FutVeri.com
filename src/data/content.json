@@ -1,0 +1,381 @@
+{
+    "hero": {
+        "title": "Futbolun Geleceğini",
+        "highlightedText": "Şekillendiriyoruz",
+        "subtitle": "Yapay zeka destekli futbol analitik platformumuz ile oyuncuları, takımları ve maçları daha iyi anlayın. Veri odaklı kararlar alın, performansı maksimize edin.",
+        "badge": "🚀 Mobil uygulamamız yayında!",
+        "ctaPrimary": {
+            "text": "Uygulamayı İndir",
+            "href": "#download"
+        },
+        "ctaSecondary": {
+            "text": "Projeyi Keşfet",
+            "href": "/projemiz"
+        },
+        "stats": [
+            {
+                "value": "10K+",
+                "label": "Aktif Kullanıcı"
+            },
+            {
+                "value": "500+",
+                "label": "Analiz Edilen Maç"
+            },
+            {
+                "value": "50+",
+                "label": "Partner Kulüp"
+            }
+        ]
+    },
+    "problemVision": {
+        "badge": "Neden FutVeri?",
+        "title": "Problemi Anlıyoruz",
+        "subtitle": "Futbol dünyasında veri ve analitik eksikliği, doğru kararların önündeki en büyük engel.",
+        "problems": [
+            {
+                "icon": "alert",
+                "title": "Veri Eksikliği",
+                "description": "Amatör ve semi-profesyonel seviyede oyuncu ve maç verilerine erişim oldukça sınırlı."
+            },
+            {
+                "icon": "target",
+                "title": "Yanlış Değerlendirmeler",
+                "description": "Sübjektif gözlemler, yetenek keşfi ve transfer kararlarında hatalara yol açıyor."
+            },
+            {
+                "icon": "lightbulb",
+                "title": "Gelişim Takibi Zorluğu",
+                "description": "Oyuncuların zaman içindeki gelişimini ölçmek ve karşılaştırmak neredeyse imkansız."
+            }
+        ],
+        "vision": {
+            "title": "Herkes İçin Futbol Analitiği",
+            "description": "FutVeri olarak amacımız, futbol analitiğini demokratikleştirmek. Profesyonel kulüplerden amatör takımlara kadar herkesin veri odaklı kararlar alabilmesini sağlıyoruz.",
+            "highlights": [
+                "Yapay zeka destekli oyuncu analizi",
+                "Gerçek zamanlı maç istatistikleri",
+                "Kullanımı kolay mobil uygulama",
+                "Uygun fiyatlı çözümler"
+            ]
+        }
+    },
+    "features": {
+        "badge": "Özellikler",
+        "title": "Neler Sunuyoruz?",
+        "subtitle": "FutVeri ile futbol analitiğinin gücünü keşfedin. Kapsamlı özelliklerimiz ile fark yaratın.",
+        "features": [
+            {
+                "icon": "BarChart3",
+                "title": "Detaylı İstatistikler",
+                "description": "Oyuncu ve maç istatistiklerini detaylı grafikler ve tablolarla görüntüleyin.",
+                "color": "green"
+            },
+            {
+                "icon": "Users",
+                "title": "Oyuncu Karşılaştırma",
+                "description": "Farklı oyuncuları yan yana karşılaştırarak potansiyeli değerlendirin.",
+                "color": "blue"
+            },
+            {
+                "icon": "Brain",
+                "title": "AI Destekli Analiz",
+                "description": "Yapay zeka algoritmalarımız performans trendlerini ve gelişim alanlarını belirler.",
+                "color": "purple"
+            },
+            {
+                "icon": "Video",
+                "title": "Video Analizi",
+                "description": "Maç videolarını analiz edin, önemli anları işaretleyin ve paylaşın.",
+                "color": "orange"
+            },
+            {
+                "icon": "TrendingUp",
+                "title": "Performans Takibi",
+                "description": "Zaman içindeki gelişimi grafiklere dökün, hedefler belirleyin.",
+                "color": "green"
+            },
+            {
+                "icon": "Share2",
+                "title": "Kolay Paylaşım",
+                "description": "Analizlerinizi takım arkadaşlarınız ve antrenörlerinizle kolayca paylaşın.",
+                "color": "blue"
+            }
+        ]
+    },
+    "howItWorks": {
+        "badge": "Nasıl Çalışır?",
+        "title": "3 Adımda Başlayın",
+        "subtitle": "FutVeri ile futbol analitiğine başlamak çok kolay. Sadece birkaç dakika içinde hazırsınız.",
+        "steps": [
+            {
+                "stepNumber": 1,
+                "title": "Uygulamayı İndirin",
+                "description": "App Store veya Google Play'den FutVeri uygulamasını ücretsiz indirin.",
+                "icon": "Download"
+            },
+            {
+                "stepNumber": 2,
+                "title": "Profilinizi Oluşturun",
+                "description": "Oyuncu, antrenör veya scout olarak profilinizi oluşturun ve tercihleri belirleyin.",
+                "icon": "UserPlus"
+            },
+            {
+                "stepNumber": 3,
+                "title": "Analiz Etmeye Başlayın",
+                "description": "Maçları kaydedin, istatistikleri takip edin ve yapay zeka destekli öneriler alın.",
+                "icon": "PlayCircle"
+            }
+        ]
+    },
+    "impactStats": {
+        "badge": "Etkimiz",
+        "title": "Rakamlarla FutVeri",
+        "subtitle": "Futbol topluluğumuz her geçen gün büyüyor. İşte bazı rakamlar.",
+        "stats": [
+            {
+                "value": 10000,
+                "label": "Aktif Kullanıcı",
+                "suffix": "+",
+                "icon": "Users",
+                "color": "green"
+            },
+            {
+                "value": 500,
+                "label": "Analiz Edilen Maç",
+                "suffix": "+",
+                "icon": "Target",
+                "color": "orange"
+            },
+            {
+                "value": 50,
+                "label": "Partner Kulüp",
+                "suffix": "+",
+                "icon": "Building2",
+                "color": "blue"
+            },
+            {
+                "value": 95,
+                "label": "Memnuniyet Oranı",
+                "suffix": "%",
+                "icon": "ThumbsUp",
+                "color": "purple"
+            }
+        ]
+    },
+    "downloadCTA": {
+        "badge": "Mobil Uygulama",
+        "title": "FutVeri'yi Hemen İndirin",
+        "subtitle": "iPhone ve Android cihazlarınız için ücretsiz uygulamamızı indirin ve futbol analitiğinin gücünü cebinize taşıyın.",
+        "appStoreUrl": "https://apps.apple.com/app/futveri",
+        "playStoreUrl": "https://play.google.com/store/apps/details?id=com.futveri.app",
+        "features": [
+            "Ücretsiz başlangıç",
+            "Offline kullanım",
+            "Gerçek zamanlı sync"
+        ]
+    },
+    "businessSolutions": {
+        "badge": "İş Çözümleri",
+        "title": "Kurumsal Çözümler",
+        "subtitle": "Futbol kulüpleri, akademiler ve federasyonlar için özel çözümler sunuyoruz.",
+        "solutions": [
+            {
+                "title": "Kulüpler İçin",
+                "description": "Profesyonel ve amatör futbol kulüpleri için kapsamlı analitik çözümler.",
+                "icon": "Building2",
+                "targetAudience": "Kulüpler",
+                "benefits": [
+                    "Oyuncu performans takibi",
+                    "Rakip analizi",
+                    "Transfer önerileri",
+                    "Özel raporlama"
+                ],
+                "ctaText": "Detaylı Bilgi",
+                "ctaHref": "/cozumler/kulupler"
+            },
+            {
+                "title": "Akademiler İçin",
+                "description": "Genç yeteneklerin keşfi ve gelişimi için özel araçlar.",
+                "icon": "GraduationCap",
+                "targetAudience": "Akademiler",
+                "benefits": [
+                    "Yetenek keşfi",
+                    "Gelişim takibi",
+                    "Ebeveyn raporları",
+                    "Antrenör araçları"
+                ],
+                "ctaText": "Detaylı Bilgi",
+                "ctaHref": "/cozumler/akademiler"
+            },
+            {
+                "title": "Scoutlar İçin",
+                "description": "Oyuncu keşfi ve değerlendirme için profesyonel araçlar.",
+                "icon": "Search",
+                "targetAudience": "Scoutlar",
+                "benefits": [
+                    "Geniş oyuncu veritabanı",
+                    "Karşılaştırma araçları",
+                    "Video arşivi",
+                    "Rapor oluşturma"
+                ],
+                "ctaText": "Detaylı Bilgi",
+                "ctaHref": "/cozumler/scoutlar"
+            }
+        ]
+    },
+    "team": {
+        "badge": "Ekibimiz",
+        "title": "FutVeri Arkasındaki Ekip",
+        "subtitle": "Futbol tutkusu ve teknoloji uzmanlığını bir araya getiren ekibimizle tanışın.",
+        "members": [
+            {
+                "name": "Ahmet Yılmaz",
+                "role": "Kurucu & CEO",
+                "bio": "15 yıllık yazılım deneyimi, futbol tutkunu",
+                "linkedin": "https://linkedin.com/in/ahmetyilmaz"
+            },
+            {
+                "name": "Elif Kaya",
+                "role": "CTO",
+                "bio": "Yapay zeka ve veri bilimi uzmanı",
+                "linkedin": "https://linkedin.com/in/elifkaya",
+                "github": "https://github.com/elifkaya"
+            },
+            {
+                "name": "Mehmet Demir",
+                "role": "Ürün Müdürü",
+                "bio": "Ex-futbolcu, spor teknolojisi meraklısı",
+                "linkedin": "https://linkedin.com/in/mehmetdemir"
+            },
+            {
+                "name": "Zeynep Özkan",
+                "role": "Tasarım Direktörü",
+                "bio": "10+ yıl UI/UX tasarım deneyimi",
+                "linkedin": "https://linkedin.com/in/zeynepozkan",
+                "twitter": "https://twitter.com/zeynepozkan"
+            }
+        ]
+    },
+    "contact": {
+        "badge": "İletişim",
+        "title": "Bizimle İletişime Geçin",
+        "subtitle": "Sorularınız, önerileriniz veya iş birliği teklifleriniz için bize ulaşın.",
+        "email": "info@futveri.com",
+        "phone": "+90 212 123 45 67",
+        "address": "İstanbul, Türkiye",
+        "formTitle": "Mesaj Gönderin",
+        "formSubtitle": "Size en kısa sürede geri dönüş yapacağız."
+    },
+    "navigation": [
+        {
+            "label": "Ana Sayfa",
+            "href": "/"
+        },
+        {
+            "label": "Projemiz",
+            "href": "/projemiz"
+        },
+        {
+            "label": "Uygulama",
+            "href": "/uygulama"
+        },
+        {
+            "label": "Çözümler",
+            "href": "/cozumler"
+        },
+        {
+            "label": "Hakkımızda",
+            "href": "/hakkimizda"
+        },
+        {
+            "label": "İletişim",
+            "href": "/iletisim"
+        }
+    ],
+    "footer": {
+        "description": "Futbol analitiği ve veri bilimini bir araya getirerek profesyonel ve amatör futbolcuların performansını artırıyoruz.",
+        "sections": [
+            {
+                "title": "Ürün",
+                "links": [
+                    {
+                        "label": "Özellikler",
+                        "href": "/#features"
+                    },
+                    {
+                        "label": "Nasıl Çalışır",
+                        "href": "/#how-it-works"
+                    },
+                    {
+                        "label": "Fiyatlandırma",
+                        "href": "/fiyatlandirma"
+                    },
+                    {
+                        "label": "SSS",
+                        "href": "/sss"
+                    }
+                ]
+            },
+            {
+                "title": "Şirket",
+                "links": [
+                    {
+                        "label": "Hakkımızda",
+                        "href": "/hakkimizda"
+                    },
+                    {
+                        "label": "Blog",
+                        "href": "/blog"
+                    },
+                    {
+                        "label": "Kariyer",
+                        "href": "/kariyer"
+                    },
+                    {
+                        "label": "Basın",
+                        "href": "/basin"
+                    }
+                ]
+            },
+            {
+                "title": "Destek",
+                "links": [
+                    {
+                        "label": "Yardım Merkezi",
+                        "href": "/yardim"
+                    },
+                    {
+                        "label": "İletişim",
+                        "href": "/iletisim"
+                    },
+                    {
+                        "label": "API Dokümantasyon",
+                        "href": "/api-docs",
+                        "isExternal": true
+                    }
+                ]
+            }
+        ],
+        "socialLinks": [
+            {
+                "platform": "twitter",
+                "href": "https://twitter.com/futveri"
+            },
+            {
+                "platform": "instagram",
+                "href": "https://instagram.com/futveri"
+            },
+            {
+                "platform": "linkedin",
+                "href": "https://linkedin.com/company/futveri"
+            },
+            {
+                "platform": "github",
+                "href": "https://github.com/futveri"
+            }
+        ],
+        "contactEmail": "info@futveri.com",
+        "contactPhone": "+90 212 123 45 67",
+        "address": "İstanbul, Türkiye"
+    }
+}

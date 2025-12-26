@@ -1,0 +1,29 @@
+import { Header, Footer } from "@/components/layout";
+import content from "@/data/content.json";
+
+export default function MarketingLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
+    return (
+        <>
+            <Header
+                logoText="FutVeri"
+                navigation={content.navigation}
+                ctaText="Uygulamayı İndir"
+                ctaHref="#download"
+            />
+            <main>{children}</main>
+            <Footer
+                logoText="FutVeri"
+                description={content.footer.description}
+                sections={content.footer.sections}
+                socialLinks={content.footer.socialLinks}
+                contactEmail={content.footer.contactEmail}
+                contactPhone={content.footer.contactPhone}
+                address={content.footer.address}
+            />
+        </>
+    );
+}
