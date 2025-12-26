@@ -4,11 +4,13 @@ import { cn } from "@/lib/utils/cn";
 import { motion } from "framer-motion";
 import { LucideIcon } from "lucide-react";
 
+export type ColorVariant = "green" | "orange" | "blue" | "purple" | "gray";
+
 export interface IconCardProps {
     icon: LucideIcon;
     title: string;
     description: string;
-    color?: "green" | "orange" | "blue" | "purple" | "gray";
+    color?: string; // ColorVariant
     variant?: "default" | "outlined" | "filled";
     size?: "sm" | "md" | "lg";
     className?: string;
@@ -87,7 +89,9 @@ export function IconCard({
     animated = true,
     delay = 0,
 }: IconCardProps) {
-    const colors = colorVariants[color];
+    // Get valid color or fallback to blue
+    const validColor = (Object.keys(colorVariants).includes(color || "") ? color : "blue") as ColorVariant;
+    const colors = colorVariants[validColor];
     const sizes = sizeVariants[size];
 
     const cardContent = (

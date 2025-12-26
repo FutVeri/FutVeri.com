@@ -53,15 +53,15 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
         );
 
         if (animated) {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const { onDrag, onDragStart, onDragEnd, ...safeProps } = props;
             return (
                 <motion.div
-                    ref={ref as React.Ref<HTMLDivElement>}
                     className={baseStyles}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-50px" }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
-                    {...props}
                 >
                     {children}
                 </motion.div>

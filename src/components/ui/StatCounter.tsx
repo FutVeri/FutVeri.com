@@ -5,13 +5,15 @@ import { cn } from "@/lib/utils/cn";
 import { motion, useInView } from "framer-motion";
 import { LucideIcon } from "lucide-react";
 
+type ColorVariant = "green" | "orange" | "blue" | "purple";
+
 export interface StatCounterProps {
     value: number;
     label: string;
     suffix?: string;
     prefix?: string;
     icon?: LucideIcon;
-    color?: "green" | "orange" | "blue" | "purple";
+    color?: string; // ColorVariant
     duration?: number;
     className?: string;
 }
@@ -88,7 +90,9 @@ export function StatCounter({
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-50px" });
     const count = useCounter(value, duration, isInView);
-    const colors = colorVariants[color];
+    // Get valid color or fallback to blue
+    const validColor = (Object.keys(colorVariants).includes(color || "") ? color : "blue") as ColorVariant;
+    const colors = colorVariants[validColor];
 
     return (
         <motion.div

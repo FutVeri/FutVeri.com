@@ -11,7 +11,7 @@ export interface StatItem {
     suffix?: string;
     prefix?: string;
     icon?: string;
-    color?: "green" | "orange" | "blue" | "purple";
+    color?: string; // "green" | "orange" | "blue" | "purple"
 }
 
 export interface ImpactStatsData {

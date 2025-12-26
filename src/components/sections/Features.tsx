@@ -10,7 +10,7 @@ export interface FeatureItem {
     icon: string;
     title: string;
     description: string;
-    color?: "green" | "orange" | "blue" | "purple";
+    color?: string; // "green" | "orange" | "blue" | "purple"
 }
 
 export interface FeaturesData {
