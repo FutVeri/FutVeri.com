@@ -60,7 +60,7 @@ export function Header({
                             className={cn(
                                 "flex items-center gap-2",
                                 "font-bold text-xl",
-                                isScrolled ? "text-gray-900 dark:text-white" : "text-white"
+                                "text-gray-900 dark:text-white"
                             )}
                         >
                             {logo || (
@@ -86,9 +86,7 @@ export function Header({
                                             "flex items-center gap-1 py-2",
                                             "text-sm font-medium",
                                             "transition-colors duration-200",
-                                            isScrolled
-                                                ? "text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
-                                                : "text-white/80 hover:text-white"
+                                            "text-gray-600 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white"
                                         )}
                                     >
                                         {item.label}
@@ -147,9 +145,7 @@ export function Header({
                                 className={cn(
                                     "lg:hidden p-2 rounded-lg",
                                     "transition-colors",
-                                    isScrolled
-                                        ? "text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
-                                        : "text-white hover:bg-white/10"
+                                    "text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"
                                 )}
                                 aria-label="Open menu"
                             >

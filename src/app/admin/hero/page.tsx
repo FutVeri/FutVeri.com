@@ -66,9 +66,10 @@ export default function HeroEditorPage() {
 
                 <div className="space-y-6">
                     {/* Title Section */}
-                    <Card variant="default" padding="lg">
-                        <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
-                            Başlık
+                    <Card variant="default" padding="lg" className="bg-white dark:bg-gray-800/50">
+                        <h3 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+                            <span className="w-1 h-4 bg-primary-500 rounded-full" />
+                            Başlık Yapılandırması
                         </h3>
                         <div className="grid gap-4">
                             <Input
@@ -98,9 +99,10 @@ export default function HeroEditorPage() {
                     </Card>
 
                     {/* Badge */}
-                    <Card variant="default" padding="lg">
-                        <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
-                            Rozet
+                    <Card variant="default" padding="lg" className="bg-white dark:bg-gray-800/50">
+                        <h3 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+                            <span className="w-1 h-4 bg-primary-500 rounded-full" />
+                            Rozet Ayarları
                         </h3>
                         <Input
                             label="Rozet Metni"
@@ -113,8 +115,9 @@ export default function HeroEditorPage() {
                     </Card>
 
                     {/* CTAs */}
-                    <Card variant="default" padding="lg">
-                        <h3 className="font-semibold text-gray-900 dark:text-white mb-4">
+                    <Card variant="default" padding="lg" className="bg-white dark:bg-gray-800/50">
+                        <h3 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+                            <span className="w-1 h-4 bg-primary-500 rounded-full" />
                             Aksiyon Butonları
                         </h3>
                         <div className="space-y-6">
@@ -165,42 +168,48 @@ export default function HeroEditorPage() {
                     </Card>
 
                     {/* Preview */}
-                    <Card variant="gradient" padding="lg">
-                        <div className="flex items-center justify-between mb-4">
-                            <h3 className="font-semibold text-gray-900 dark:text-white">
+                    <Card variant="outline" padding="lg" className="bg-gray-50/50 dark:bg-gray-900/20">
+                        <div className="flex items-center justify-between mb-6">
+                            <h3 className="font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                                <span className="w-1 h-4 bg-primary-500 rounded-full" />
                                 Canlı Önizleme
                             </h3>
-                            <button className="text-sm text-primary-600 dark:text-primary-400 flex items-center gap-1 hover:underline">
+                            <button className="text-sm font-semibold text-primary-600 dark:text-primary-400 flex items-center gap-1 hover:underline">
                                 <RefreshCw className="w-4 h-4" />
                                 Yenile
                             </button>
                         </div>
-                        <div className="bg-gray-900 rounded-xl p-8 text-center">
-                            {formData.badge && (
-                                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-primary-500/10 text-primary-400 border border-primary-500/30 mb-4">
-                                    {formData.badge}
-                                </span>
-                            )}
-                            <h1 className="text-2xl md:text-3xl font-bold text-white">
-                                {formData.title}{" "}
-                                {formData.highlightedText && (
-                                    <span className="gradient-text">{formData.highlightedText}</span>
-                                )}
-                            </h1>
-                            <p className="text-gray-400 mt-3 text-sm max-w-md mx-auto">
-                                {formData.subtitle}
-                            </p>
-                            <div className="flex items-center justify-center gap-3 mt-6">
-                                {formData.ctaPrimaryText && (
-                                    <span className="px-4 py-2 rounded-lg bg-primary-500 text-white text-sm font-medium">
-                                        {formData.ctaPrimaryText}
+                        <div className="relative rounded-3xl p-10 text-center overflow-hidden border border-gray-100 dark:border-gray-800 bg-gradient-to-br from-blue-50 via-white to-sky-50 shadow-inner">
+                            {/* Grid overlay for preview */}
+                            <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#3b82f6 0.5px, transparent 0.5px)', backgroundSize: '20px 20px' }} />
+
+                            <div className="relative z-10">
+                                {formData.badge && (
+                                    <span className="inline-flex items-center px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-primary-50 text-primary-600 border border-primary-100 mb-6">
+                                        {formData.badge}
                                     </span>
                                 )}
-                                {formData.ctaSecondaryText && (
-                                    <span className="px-4 py-2 text-gray-300 text-sm">
-                                        {formData.ctaSecondaryText} →
-                                    </span>
-                                )}
+                                <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight tracking-tight">
+                                    {formData.title}{" "}
+                                    {formData.highlightedText && (
+                                        <span className="text-primary-600">{formData.highlightedText}</span>
+                                    )}
+                                </h1>
+                                <p className="text-gray-500 mt-6 text-sm max-w-lg mx-auto leading-relaxed">
+                                    {formData.subtitle}
+                                </p>
+                                <div className="flex items-center justify-center gap-4 mt-8">
+                                    {formData.ctaPrimaryText && (
+                                        <span className="px-6 py-3 rounded-xl bg-gray-900 text-white text-xs font-bold uppercase tracking-wider">
+                                            {formData.ctaPrimaryText}
+                                        </span>
+                                    )}
+                                    {formData.ctaSecondaryText && (
+                                        <span className="px-6 py-3 text-gray-400 text-xs font-bold uppercase tracking-wider">
+                                            {formData.ctaSecondaryText}
+                                        </span>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     </Card>

@@ -37,7 +37,7 @@ export function SectionHeader({
     const content = (
         <div
             className={cn(
-                "flex flex-col gap-4",
+                "flex flex-col gap-6",
                 alignmentClasses[align],
                 className
             )}

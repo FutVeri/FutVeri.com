@@ -28,7 +28,7 @@ export function DownloadCTA({ data, className }: DownloadCTAProps) {
                         "relative overflow-hidden",
                         "rounded-3xl",
                         "bg-gradient-to-br from-primary-600 via-primary-500 to-accent-500",
-                        "p-8 md:p-12 lg:p-16"
+                        "p-6 sm:p-8 md:p-12 lg:p-16"
                     )}
                 >
                     {/* Background decoration */}
@@ -156,7 +156,7 @@ export function DownloadCTA({ data, className }: DownloadCTAProps) {
                         >
                             <div
                                 className={cn(
-                                    "w-64 h-[500px] rounded-[3rem]",
+                                    "w-52 h-[420px] sm:w-64 sm:h-[500px] rounded-[2.5rem] sm:rounded-[3rem]",
                                     "bg-gradient-to-br from-gray-900 to-gray-800",
                                     "border-4 border-gray-700",
                                     "shadow-2xl shadow-black/30",
@@ -165,7 +165,7 @@ export function DownloadCTA({ data, className }: DownloadCTAProps) {
                                 )}
                             >
                                 {/* Screen */}
-                                <div className="absolute inset-2 rounded-[2.5rem] bg-gray-950 overflow-hidden">
+                                <div className="absolute inset-2 rounded-[2rem] sm:rounded-[2.5rem] bg-gray-950 overflow-hidden">
                                     <div className="w-full h-full bg-gradient-to-br from-primary-600/20 to-accent-500/20 flex items-center justify-center">
                                         <span className="text-4xl">📱</span>
                                     </div>

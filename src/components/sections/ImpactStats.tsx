@@ -37,8 +37,7 @@ export function ImpactStats({ data, className }: ImpactStatsProps) {
         <section
             className={cn(
                 "section-padding",
-                "bg-gradient-to-br from-gray-900 via-gray-900 to-primary-950",
-                "text-white",
+                "bg-gray-50 dark:bg-gray-950 border-y border-gray-200 dark:border-gray-800",
                 className
             )}
         >
@@ -48,10 +47,9 @@ export function ImpactStats({ data, className }: ImpactStatsProps) {
                     title={data.title}
                     subtitle={data.subtitle}
                     align="center"
-                    className="[&_h2]:text-white [&_p]:text-gray-400"
                 />
 
-                <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+                <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12">
                     {data.stats.map((stat, index) => (
                         <StatCounter
                             key={index}
@@ -61,7 +59,6 @@ export function ImpactStats({ data, className }: ImpactStatsProps) {
                             prefix={stat.prefix}
                             icon={getIconComponent(stat.icon)}
                             color={stat.color || "green"}
-                            className="[&_div]:text-white [&_p]:text-gray-400"
                         />
                     ))}
                 </div>

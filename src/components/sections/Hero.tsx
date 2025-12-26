@@ -25,7 +25,7 @@ export function Hero({ data, className }: HeroProps) {
         <section
             className={cn(
                 "relative min-h-screen flex items-center justify-center overflow-hidden",
-                "bg-gradient-to-br from-gray-900 via-gray-900 to-primary-950",
+                "bg-gradient-to-br from-blue-50 via-white to-sky-50",
                 className
             )}
         >
@@ -40,14 +40,14 @@ export function Hero({ data, className }: HeroProps) {
                 <div
                     className="absolute inset-0 opacity-[0.03]"
                     style={{
-                        backgroundImage: `linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)`,
-                        backgroundSize: '60px 60px'
+                        backgroundImage: `linear-gradient(to right, #3b82f6 1px, transparent 1px), linear-gradient(to bottom, #3b82f6 1px, transparent 1px)`,
+                        backgroundSize: '80px 80px'
                     }}
                 />
             </div>
 
             {/* Content */}
-            <div className="container-main relative z-10 py-20">
+            <div className="container-main relative z-10 pt-28 pb-32 sm:pt-32 sm:pb-40">
                 <div className="max-w-4xl mx-auto text-center">
                     {/* Badge */}
                     {data.badge && (
@@ -61,8 +61,8 @@ export function Hero({ data, className }: HeroProps) {
                                     "inline-flex items-center gap-2",
                                     "px-4 py-2 rounded-full",
                                     "text-sm font-semibold",
-                                    "bg-primary-500/10 border border-primary-500/30",
-                                    "text-primary-400"
+                                    "bg-primary-50 border border-primary-200",
+                                    "text-primary-600"
                                 )}
                             >
                                 <span className="w-2 h-2 rounded-full bg-primary-500 animate-pulse" />
@@ -73,7 +73,7 @@ export function Hero({ data, className }: HeroProps) {
 
                     {/* Title */}
                     <motion.h1
-                        className="display-1 text-white mt-6"
+                        className="display-1 text-gray-900 mt-10 md:mt-12 tracking-tight"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }}
@@ -90,7 +90,7 @@ export function Hero({ data, className }: HeroProps) {
 
                     {/* Subtitle */}
                     <motion.p
-                        className="body-lg text-gray-400 mt-6 max-w-2xl mx-auto"
+                        className="body-lg text-gray-600 mt-10 md:mt-12 max-w-2xl mx-auto"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
@@ -100,7 +100,7 @@ export function Hero({ data, className }: HeroProps) {
 
                     {/* CTAs */}
                     <motion.div
-                        className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10"
+                        className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-14"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
@@ -131,32 +131,22 @@ export function Hero({ data, className }: HeroProps) {
                     {/* Stats */}
                     {data.stats && data.stats.length > 0 && (
                         <motion.div
-                            className="flex items-center justify-center gap-8 sm:gap-16 mt-16 pt-10 border-t border-white/10"
+                            className="flex flex-wrap items-center justify-center gap-10 sm:gap-20 mt-24 pt-12 border-t border-gray-100"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.4 }}
                         >
                             {data.stats.map((stat, index) => (
-                                <div key={index} className="text-center">
-                                    <div className="text-3xl sm:text-4xl font-bold text-white">
+                                <div key={index} className="text-center min-w-[100px]">
+                                    <div className="text-3xl sm:text-5xl font-extrabold text-primary-600 tracking-tighter">
                                         {stat.value}
                                     </div>
-                                    <div className="text-sm text-gray-500 mt-1">{stat.label}</div>
+                                    <div className="text-[10px] sm:text-xs text-gray-400 mt-2 uppercase tracking-[0.2em] font-bold">{stat.label}</div>
                                 </div>
                             ))}
                         </motion.div>
                     )}
                 </div>
-
-                {/* Floating App Preview (optional decoration) */}
-                <motion.div
-                    className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-full max-w-lg opacity-60"
-                    initial={{ opacity: 0, y: 40 }}
-                    animate={{ opacity: 0.6, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.5 }}
-                >
-                    <div className="w-full h-[300px] bg-gradient-to-t from-transparent to-gray-800/50 rounded-t-3xl border border-white/10 border-b-0" />
-                </motion.div>
             </div>
 
             {/* Scroll Indicator */}

@@ -43,102 +43,88 @@ export function ProblemVision({ data, className }: ProblemVisionProps) {
                     align="center"
                 />
 
-                <div className="mt-16 grid lg:grid-cols-2 gap-12 lg:gap-20">
-                    {/* Problems */}
+                <div className="mt-20 grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+                    {/* Problems Side */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: 0.6 }}
                     >
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className="w-10 h-10 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-                                <AlertTriangle className="w-5 h-5 text-red-500" />
-                            </div>
-                            <h3 className="heading-2 text-gray-900 dark:text-white">Problem</h3>
+                        <div className="flex items-center gap-4 mb-10">
+                            <span className="text-xs font-bold tracking-widest uppercase text-red-500 bg-red-50 dark:bg-red-900/20 px-3 py-1 rounded-md">
+                                Challenge
+                            </span>
+                            <div className="h-px flex-1 bg-red-100 dark:bg-red-900/20" />
                         </div>
 
-                        <div className="space-y-4">
-                            {data.problems.map((problem, index) => {
-                                const IconComponent = iconMap[problem.icon] || AlertTriangle;
-                                return (
-                                    <motion.div
-                                        key={index}
-                                        className={cn(
-                                            "p-5 rounded-2xl",
-                                            "bg-gray-50 dark:bg-gray-900",
-                                            "border border-gray-100 dark:border-gray-800",
-                                            "hover:border-red-200 dark:hover:border-red-800/50",
-                                            "transition-colors duration-300"
-                                        )}
-                                        initial={{ opacity: 0, y: 10 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ duration: 0.3, delay: index * 0.1 }}
-                                    >
-                                        <div className="flex gap-4">
-                                            <div className="flex-shrink-0">
-                                                <div className="w-8 h-8 rounded-lg bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-                                                    <IconComponent className="w-4 h-4 text-red-500" />
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
-                                                    {problem.title}
-                                                </h4>
-                                                <p className="text-sm text-gray-600 dark:text-gray-400">
-                                                    {problem.description}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                );
-                            })}
+                        <div className="space-y-10">
+                            {data.problems.map((problem, index) => (
+                                <motion.div
+                                    key={index}
+                                    className="group relative pl-8"
+                                    initial={{ opacity: 0, y: 10 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                                >
+                                    {/* Vertical Indicator */}
+                                    <div className="absolute left-0 top-1 bottom-1 w-0.5 bg-gray-200 dark:bg-gray-800 group-hover:bg-red-400 transition-colors" />
+
+                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+                                        {problem.title}
+                                    </h4>
+                                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                        {problem.description}
+                                    </p>
+                                </motion.div>
+                            ))}
                         </div>
                     </motion.div>
 
-                    {/* Vision */}
+                    {/* Vision Side */}
                     <motion.div
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        className="relative"
                     >
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className="w-10 h-10 rounded-xl bg-primary-100 dark:bg-primary-900/30 flex items-center justify-center">
-                                <Target className="w-5 h-5 text-primary-500" />
-                            </div>
-                            <h3 className="heading-2 text-gray-900 dark:text-white">Vizyonumuz</h3>
+                        <div className="flex items-center gap-4 mb-10">
+                            <span className="text-xs font-bold tracking-widest uppercase text-primary-600 bg-primary-50 dark:bg-primary-900/20 px-3 py-1 rounded-md">
+                                Solution
+                            </span>
+                            <div className="h-px flex-1 bg-primary-100 dark:bg-primary-900/20" />
                         </div>
 
-                        <div
-                            className={cn(
-                                "p-6 rounded-2xl",
-                                "bg-gradient-to-br from-primary-50 to-primary-100/50",
-                                "dark:from-primary-950/50 dark:to-primary-900/30",
-                                "border border-primary-200 dark:border-primary-800"
-                            )}
-                        >
-                            <h4 className="heading-2 text-primary-700 dark:text-primary-300 mb-3">
-                                {data.vision.title}
-                            </h4>
-                            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                                {data.vision.description}
-                            </p>
+                        <div className="relative p-10 md:p-16 rounded-[3rem] bg-primary-50 dark:bg-primary-950/20 text-gray-900 dark:text-white border border-primary-100 dark:border-primary-900/30 shadow-sm overflow-hidden group">
+                            {/* Decorative background glow */}
+                            <div className="absolute -top-32 -right-32 w-80 h-80 bg-primary-500/5 rounded-full blur-[100px] group-hover:bg-primary-500/10 transition-colors duration-1000" />
 
-                            {data.vision.highlights && data.vision.highlights.length > 0 && (
-                                <ul className="space-y-2">
-                                    {data.vision.highlights.map((highlight, index) => (
-                                        <li
-                                            key={index}
-                                            className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400"
-                                        >
-                                            <span className="w-1.5 h-1.5 rounded-full bg-primary-500 mt-2 flex-shrink-0" />
-                                            {highlight}
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
+                            <div className="relative z-10">
+                                <h4 className="display-2 mb-8 leading-[1.15] tracking-tight text-primary-900 dark:text-primary-100">
+                                    {data.vision.title}
+                                </h4>
+                                <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-medium">
+                                    {data.vision.description}
+                                </p>
+
+                                {data.vision.highlights && data.vision.highlights.length > 0 && (
+                                    <div className="grid grid-cols-1 gap-6">
+                                        {data.vision.highlights.map((highlight, index) => (
+                                            <div
+                                                key={index}
+                                                className="flex items-center gap-4 py-4 border-t border-primary-100/50 dark:border-primary-900/20"
+                                            >
+                                                <div className="w-1.5 h-1.5 rounded-full bg-primary-500" />
+                                                <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 tracking-wide uppercase">
+                                                    {highlight}
+                                                </span>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </motion.div>
                 </div>
