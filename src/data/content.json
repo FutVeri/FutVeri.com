@@ -1,6 +1,6 @@
 {
     "hero": {
-        "title": "Futbolun Geleceğin",
+        "title": "Futbol Geleceğin",
         "highlightedText": "En Büyük Verisi",
         "subtitle": "Yapay zeka destekli futbol analitik platformumuz ile oyuncuları, takımları ve maçları daha iyi anlayın. Veri odaklı kararlar alın, performansı maksimize edin.",
         "badge": "",
@@ -229,22 +229,22 @@
         "subtitle": "Futbol tutkusu ve teknoloji uzmanlığını bir araya getiren ekibimizle tanışın.",
         "members": [
             {
-                "name": "Ahmet Yılmaz",
+                "name": "Emre Mert",
                 "role": "Kurucu & CEO",
-                "bio": "15 yıllık yazılım deneyimi, futbol tutkunu",
+                "bio": "Mobil Yazılım Geliştirme Deneyimi, futbol tutkunu",
                 "linkedin": "https://linkedin.com/in/ahmetyilmaz"
             },
             {
-                "name": "Elif Kaya",
+                "name": "Ertuğrul Aydın",
                 "role": "CTO",
-                "bio": "Yapay zeka ve veri bilimi uzmanı",
+                "bio": "Sunucu Geliştirme Deneyimi",
                 "linkedin": "https://linkedin.com/in/elifkaya",
                 "github": "https://github.com/elifkaya"
             },
             {
-                "name": "Mehmet Demir",
+                "name": "Berk Uluçay",
                 "role": "Ürün Müdürü",
-                "bio": "Ex-futbolcu, spor teknolojisi meraklısı",
+                "bio": "Yapay Zeka ve Veri Bilimi Deneyimi",
                 "linkedin": "https://linkedin.com/in/mehmetdemir"
             },
             {

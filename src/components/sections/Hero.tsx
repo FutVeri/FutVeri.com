@@ -2,8 +2,6 @@
 
 import { cn } from "@/lib/utils/cn";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui";
-import { ArrowRight, Download, Play } from "lucide-react";
 
 export interface HeroData {
     title: string;
@@ -47,8 +45,8 @@ export function Hero({ data, className }: HeroProps) {
             </div>
 
             {/* Content */}
-            <div className="container-main relative z-10 pt-28 pb-32 sm:pt-32 sm:pb-40">
-                <div className="max-w-4xl mx-auto text-center">
+            <div className="w-full relative z-10 pt-28 pb-32 sm:pt-32 sm:pb-40 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+                <div className="max-w-5xl w-full text-center flex flex-col items-center">
                     {/* Badge */}
                     {data.badge && (
                         <motion.div
@@ -90,7 +88,7 @@ export function Hero({ data, className }: HeroProps) {
 
                     {/* Subtitle */}
                     <motion.p
-                        className="body-lg text-gray-600 mt-10 md:mt-12 max-w-2xl mx-auto"
+                        className="body-lg text-gray-600 mt-10 md:mt-12 max-w-3xl mx-auto leading-relaxed"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
@@ -98,35 +96,7 @@ export function Hero({ data, className }: HeroProps) {
                         {data.subtitle}
                     </motion.p>
 
-                    {/* CTAs */}
-                    <motion.div
-                        className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-14"
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.3 }}
-                    >
-                        <Button
-                            href={data.ctaPrimary.href}
-                            size="lg"
-                            icon={Download}
-                            iconPosition="left"
-                            className="min-w-[200px]"
-                        >
-                            {data.ctaPrimary.text}
-                        </Button>
-                        {data.ctaSecondary && (
-                            <Button
-                                href={data.ctaSecondary.href}
-                                variant="ghost"
-                                size="lg"
-                                icon={ArrowRight}
-                                iconPosition="right"
-                                className="text-gray-300 hover:text-white hover:bg-white/5"
-                            >
-                                {data.ctaSecondary.text}
-                            </Button>
-                        )}
-                    </motion.div>
+
 
                     {/* Stats */}
                     {data.stats && data.stats.length > 0 && (

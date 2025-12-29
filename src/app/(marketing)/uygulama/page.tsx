@@ -25,7 +25,7 @@ export default function AppPage() {
                         badge="Mobil Uygulama"
                         title="FutVeri Uygulaması"
                         subtitle="Futbol analitiğinin gücünü cebinize taşıyın. iPhone ve Android için ücretsiz indirin."
-                        className="[&_h2]:text-white [&_p]:text-gray-400"
+                        className="[&_h2]:text-white [&_p]:text-gray-300 [&_span]:text-white [&_span]:bg-primary-600 [&_span]:border-primary-500"
                     />
                 </div>
             </section>

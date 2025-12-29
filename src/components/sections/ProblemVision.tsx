@@ -58,11 +58,11 @@ export function ProblemVision({ data, className }: ProblemVisionProps) {
                             <div className="h-px flex-1 bg-red-100 dark:bg-red-900/20" />
                         </div>
 
-                        <div className="space-y-10">
+                        <div className="space-y-12">
                             {data.problems.map((problem, index) => (
                                 <motion.div
                                     key={index}
-                                    className="group relative pl-8"
+                                    className="group relative pl-10 pr-4"
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
@@ -71,10 +71,10 @@ export function ProblemVision({ data, className }: ProblemVisionProps) {
                                     {/* Vertical Indicator */}
                                     <div className="absolute left-0 top-1 bottom-1 w-0.5 bg-gray-200 dark:bg-gray-800 group-hover:bg-red-400 transition-colors" />
 
-                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+                                    <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-3">
                                         {problem.title}
                                     </h4>
-                                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-base">
                                         {problem.description}
                                     </p>
                                 </motion.div>
@@ -97,15 +97,15 @@ export function ProblemVision({ data, className }: ProblemVisionProps) {
                             <div className="h-px flex-1 bg-primary-100 dark:bg-primary-900/20" />
                         </div>
 
-                        <div className="relative p-10 md:p-16 rounded-[3rem] bg-primary-50 dark:bg-primary-950/20 text-gray-900 dark:text-white border border-primary-100 dark:border-primary-900/30 shadow-sm overflow-hidden group">
+                        <div className="relative p-8 md:p-12 rounded-[2rem] bg-primary-50 dark:bg-primary-950/20 text-gray-900 dark:text-white border border-primary-100 dark:border-primary-900/30 shadow-sm overflow-hidden group">
                             {/* Decorative background glow */}
                             <div className="absolute -top-32 -right-32 w-80 h-80 bg-primary-500/5 rounded-full blur-[100px] group-hover:bg-primary-500/10 transition-colors duration-1000" />
 
                             <div className="relative z-10">
-                                <h4 className="display-2 mb-8 leading-[1.15] tracking-tight text-primary-900 dark:text-primary-100">
+                                <h4 className="text-2xl md:text-3xl font-bold mb-6 leading-tight tracking-tight text-primary-900 dark:text-primary-100">
                                     {data.vision.title}
                                 </h4>
-                                <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-medium">
+                                <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-8">
                                     {data.vision.description}
                                 </p>
 
@@ -114,7 +114,7 @@ export function ProblemVision({ data, className }: ProblemVisionProps) {
                                         {data.vision.highlights.map((highlight, index) => (
                                             <div
                                                 key={index}
-                                                className="flex items-center gap-4 py-4 border-t border-primary-100/50 dark:border-primary-900/20"
+                                                className="flex items-center gap-4 py-3 border-t border-primary-100/50 dark:border-primary-900/20"
                                             >
                                                 <div className="w-1.5 h-1.5 rounded-full bg-primary-500" />
                                                 <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 tracking-wide uppercase">

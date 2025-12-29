@@ -46,7 +46,7 @@ export default function ProjectPage() {
                         badge="Projemiz"
                         title="FutVeri Hikayesi"
                         subtitle="Futbol analitiğini herkes için erişilebilir kılma yolculuğumuz."
-                        className="[&_h2]:text-white [&_p]:text-gray-400"
+                        className="[&_h2]:text-white [&_p]:text-gray-300 [&_span]:text-white [&_span]:bg-primary-600 [&_span]:border-primary-500"
                     />
                 </div>
             </section>

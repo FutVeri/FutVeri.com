@@ -42,7 +42,7 @@ export default function AboutPage() {
                         badge="Hakkımızda"
                         title="Hikayemiz"
                         subtitle="Futbol tutkusu ve teknoloji uzmanlığını bir araya getirerek futbol analitiğinin geleceğini şekillendiriyoruz."
-                        className="[&_h2]:text-white [&_p]:text-gray-400"
+                        className="[&_h2]:text-white [&_p]:text-gray-300 [&_span]:text-white [&_span]:bg-primary-600 [&_span]:border-primary-500"
                     />
                 </div>
             </section>
@@ -56,7 +56,7 @@ export default function AboutPage() {
                         </h2>
                         <div className="prose prose-lg dark:prose-invert">
                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                                FutVeri, 2023 yılında bir grup futbol tutkunu ve teknoloji uzmanı tarafından kuruldu.
+                                FutVeri, 2025 yılında bir grup futbol tutkunu ve teknoloji uzmanı tarafından kuruldu.
                                 Amacımız basit ama güçlü: Futbol analitiğini profesyonel kulüplerden amatör takımlara
                                 kadar herkes için erişilebilir kılmak.
                             </p>

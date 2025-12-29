@@ -18,7 +18,7 @@ export default function SolutionsPage() {
                         badge="İş Çözümleri"
                         title="Kurumsal Çözümler"
                         subtitle="Futbol kulüpleri, akademiler ve federasyonlar için özel analitik çözümler. Profesyonel ihtiyaçlarınız için güçlü araçlar."
-                        className="[&_h2]:text-white [&_p]:text-gray-400"
+                        className="[&_h2]:text-white [&_p]:text-gray-300 [&_span]:text-white [&_span]:bg-primary-600 [&_span]:border-primary-500"
                     />
                 </div>
             </section>
